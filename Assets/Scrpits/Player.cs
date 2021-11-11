@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //プレイヤーオブジェクトに力を加えて移動
+        //WASD or 上下左右キーで移動
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             this.gameObject.GetComponent<Rigidbody>().AddForce(0,0,1);
