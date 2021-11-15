@@ -10,7 +10,7 @@ public class TrashGenerator : MonoBehaviour
     public GameObject BarrelPrefab;
     public GameObject Barrel_ClosedPrefab;
 
-    float span = 5.0f; //ˆê•b‚ð1ƒXƒpƒ“‚É‚·‚é
+    float span = 3.0f; //ˆê•b‚ð1ƒXƒpƒ“‚É‚·‚é
     float delta = 0;
 
     // Update is called once per frame
@@ -45,8 +45,8 @@ public class TrashGenerator : MonoBehaviour
 
             float x = new float();
             float z = new float();
-            x = Random.Range(-90, 91);
-            z = Random.Range(-90, 91);
+            x = Random.Range(-85, 86);
+            z = Random.Range(-85, 86);
             if (x * x + z * z < 10000)
             {
                 item.transform.position = new Vector3(x, 60, z);
