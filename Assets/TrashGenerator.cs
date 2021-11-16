@@ -45,16 +45,9 @@ public class TrashGenerator : MonoBehaviour
 
             float x = new float();
             float z = new float();
-            x = Random.Range(-85, 86);
-            z = Random.Range(-85, 86);
-            if (x * x + z * z < 10000)
-            {
-                item.transform.position = new Vector3(x, 60, z);
-            }
-            else
-            {
-                return;
-            }
+            x = Random.Range(0, 70);
+            z = Random.Range(0, 45);
+            item.transform.position = new Vector3(x, 60, z);
         }
         
     }

@@ -3,7 +3,12 @@ guid: c5ec9aedb9dece243bfa3f96a494a85e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TirePrefab: {fileID: 6822959180905181843, guid: b66719c980c48c04cb1a5b5b556cdd5d, type: 3}
+  - Box_1Prefab: {fileID: 6022912219371347689, guid: f0cb08a6948797f4bb6962fedd26437b, type: 3}
+  - Box_2Prefab: {fileID: 7280051480294569762, guid: a954412f8488f8b4e835ebfc93470966, type: 3}
+  - BarrelPrefab: {fileID: 2921145377179165289, guid: cd9ee8bdaa226d646b52e1e95aff097b, type: 3}
+  - Barrel_ClosedPrefab: {fileID: 2063184099850024387, guid: b904c36a08979cc419bf99b4171c0cc9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
