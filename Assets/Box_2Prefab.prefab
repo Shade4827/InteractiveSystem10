@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 7278313694835963361}
   m_Layer: 0
   m_Name: Box_2Prefab
-  m_TagString: Untagged
+  m_TagString: Garbage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
