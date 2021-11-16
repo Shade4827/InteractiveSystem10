@@ -9,6 +9,7 @@ MonoImporter:
   - Box_2Prefab: {fileID: 7280051480294569762, guid: a954412f8488f8b4e835ebfc93470966, type: 3}
   - BarrelPrefab: {fileID: 2921145377179165289, guid: cd9ee8bdaa226d646b52e1e95aff097b, type: 3}
   - Barrel_ClosedPrefab: {fileID: 2063184099850024387, guid: b904c36a08979cc419bf99b4171c0cc9, type: 3}
+  - Cola_CanPrefab: {fileID: 140885759590317284, guid: fcbb979bb0c23e84d8a35f9806adf529, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
