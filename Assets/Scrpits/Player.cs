@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    float MOVE_FORCE_MULTIPLIER = 1.0f;
-    float MAX_SPEED = 3.0f;
+    float MOVE_FORCE_MULTIPLIER = 1.5f;
+    float MAX_SPEED = 10.0f;
+    float ROTATE_ANGLE = 1.5f;
     Rigidbody _rb;
     Vector3 _moveDirection;
 
@@ -37,12 +38,12 @@ public class Player : MonoBehaviour
         //AD or 左右キーで左右に旋回
         if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Rotate(new Vector3(0, -1, 0),Space.Self);
+            this.transform.Rotate(new Vector3(0, -ROTATE_ANGLE, 0),Space.Self);
         }
 
         if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.Rotate(new Vector3(0, 1, 0),Space.Self);
+            this.transform.Rotate(new Vector3(0, ROTATE_ANGLE, 0),Space.Self);
         }
     }
 }
