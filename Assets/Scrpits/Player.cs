@@ -45,5 +45,7 @@ public class Player : MonoBehaviour
         {
             this.transform.Rotate(new Vector3(0, ROTATE_ANGLE, 0),Space.Self);
         }
+
+        
     }
 }
