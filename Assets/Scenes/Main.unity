@@ -730,7 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0a52574f762abd45859c95ab0492dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeCount: 100
+  _timeCount: 10
   _timeText: {fileID: 961630840}
   _scoreText: {fileID: 1850207559}
   _countDownText: {fileID: 1259545981}

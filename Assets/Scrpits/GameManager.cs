@@ -45,12 +45,12 @@ public class GameManager : MonoBehaviour
         else if(_countDown <= 0){
             _countDownText.text = "";
 
-            _timeCount -= Time.deltaTime;
-
-            _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
-
             if(_timeCount <= 0.0f){
-                SceneManager.LoadScene(RESULT_SCENE_NAME);
+                StartCoroutine("ChangeScene");
+            }
+            else{
+                _timeCount -= Time.deltaTime;
+                _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
             }
 
             if(_flagAddScore){
@@ -67,5 +67,14 @@ public class GameManager : MonoBehaviour
     void AddScore(){
         _score += ITEM_POINT;
         _scoreText.text = _score.ToString("D7");
+    }
+    
+    IEnumerator ChangeScene(){
+        _scoreText.text = "";
+        _timeText.text = "";
+        _countDownText.text = "Finish!";
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene(RESULT_SCENE_NAME);
+        yield return null;
     }
 }
