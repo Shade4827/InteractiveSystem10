@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    //時間関連
+    //時間制限関連
     [SerializeField]
     float _timeCount = 100.0f;
     [SerializeField]
@@ -21,28 +21,42 @@ public class GameManager : MonoBehaviour
 
     //画面遷移関連
     const string RESULT_SCENE_NAME = "Result";
-    
+
+    //開始前カウントダウン
+    [SerializeField]
+    Text _countDownText;
+    float _countDown;
+
     // Start is called before the first frame update
     void Start()
     {
         _score = 0;
         _flagAddScore = false;
+        _countDown = 3.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _timeCount -= Time.deltaTime;
-
-        _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
-
-        if(_timeCount <= 0.0f){
-            SceneManager.LoadScene(RESULT_SCENE_NAME);
+        if(_countDown >= 0){
+            _countDown -= Time.deltaTime;
+            _countDownText.text = ((int)_countDown).ToString();
         }
+        else if(_countDown <= 0){
+            _countDownText.text = "";
 
-        if(_flagAddScore){
-            AddScore();
-            _flagAddScore = false;
+            _timeCount -= Time.deltaTime;
+
+            _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
+
+            if(_timeCount <= 0.0f){
+                SceneManager.LoadScene(RESULT_SCENE_NAME);
+            }
+
+            if(_flagAddScore){
+                AddScore();
+                _flagAddScore = false;
+            }
         }
     }
 
