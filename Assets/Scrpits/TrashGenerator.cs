@@ -50,8 +50,8 @@ public class TrashGenerator : MonoBehaviour
 
             float x = new float();
             float z = new float();
-            x = Random.Range(0, 70);
-            z = Random.Range(0, 45);
+            x = Random.Range(0, 75);
+            z = Random.Range(0, 53);
             item.transform.position = new Vector3(x, 60, z);
         }
         
