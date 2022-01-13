@@ -6,9 +6,14 @@ public class Player : MonoBehaviour
 {
     float MOVE_FORCE_MULTIPLIER = 1.5f;
     float MAX_SPEED = 10.0f;
-    float ROTATE_ANGLE = 1.5f;
+    float ROTATE_ANGLE = 2.0f;
     Rigidbody _rb;
     Vector3 _moveDirection;
+
+    [SerializeField]
+    Transform _limitFrontRight;
+    [SerializeField]
+    Transform _limitBackLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -46,6 +51,7 @@ public class Player : MonoBehaviour
             this.transform.Rotate(new Vector3(0, ROTATE_ANGLE, 0),Space.Self);
         }
 
-        
+        this.transform.position = new Vector3(Mathf.Clamp(transform.position.x,_limitBackLeft.position.x,_limitFrontRight.position.x), 0
+                                            , Mathf.Clamp(transform.position.z,_limitBackLeft.position.z,_limitFrontRight.position.z));
     }
 }
