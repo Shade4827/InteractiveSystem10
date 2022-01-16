@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     //スコア関連
     int _score;
     bool _flagAddScore;
-    const int ITEM_POINT = 100;
+    int _gotPoint;
     [SerializeField]
     Text _scoreText;
 
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     {
         _score = 0;
         _flagAddScore = false;
-        _countDown = 3.0f;
+        _countDown = 3.1f;
     }
 
     // Update is called once per frame
@@ -60,12 +60,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void FlagAddScore(){
+    public void FlagAddScore(int gotPoint){
         _flagAddScore = true;
+        _gotPoint = gotPoint;
     }
     
     void AddScore(){
-        _score += ITEM_POINT;
+        _score += _gotPoint;
         _scoreText.text = _score.ToString("D7");
     }
     
