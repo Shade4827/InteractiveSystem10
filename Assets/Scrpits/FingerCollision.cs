@@ -11,11 +11,11 @@ public class FingerCollision : MonoBehaviour
     AudioSource _destroySE;
     
     const int TIRE_POINT = 100;
-    const int BOX_1_POINT = 150;
-    const int BOX_2_POINT = 200;
-    const int BARREL_POINT = 250;
-    const int BARREL_CLOSE_POINT = 300;
-    const int COLA_CAN_POINT = 350;
+    const int BOX_1_POINT = 200;
+    const int BOX_2_POINT = 300;
+    const int BARREL_POINT = 400;
+    const int BARREL_CLOSE_POINT = 500;
+    const int COLA_CAN_POINT = 1000;
 
     void Start(){
         _destroySE = _handModels.GetComponent<AudioSource>();
