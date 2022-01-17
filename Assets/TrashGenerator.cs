@@ -44,24 +44,24 @@ public class TrashGenerator : MonoBehaviour
     {
        
             GameObject item;
-            int dice = Random.Range(1, 7); //1から6までのランダムな数字を選ぶ
-            if (dice == 1)
+            int dice = Random.Range(1, 101); //1から100までのランダムな数字を選ぶ
+            if ((dice >= 1)&&(dice<=22))
             {
                 item = Instantiate(TirePrefab) as GameObject;
             }
-            else if (dice == 2)
+            else if ((dice >= 23) && (dice <= 42))
             {
                 item = Instantiate(Box_1Prefab) as GameObject;
             }
-            else if (dice == 3)
+            else if ((dice >= 43) && (dice <= 60))
             {
                 item = Instantiate(Box_2Prefab) as GameObject;
             }
-            else if (dice == 4)
+            else if ((dice >= 61) && (dice <= 76))
             {
                 item = Instantiate(BarrelPrefab) as GameObject;
             }
-            else if (dice == 5)
+            else if ((dice >= 77) && (dice <= 90))
             {
                 item = Instantiate(Barrel_ClosedPrefab) as GameObject;
             }
