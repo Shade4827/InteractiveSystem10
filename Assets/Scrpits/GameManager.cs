@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     Text _timeText;
     
     //スコア関連
-    int _score;
+    public static int _score;
     bool _flagAddScore;
     int _gotPoint;
     [SerializeField]
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
     
     void AddScore(){
         _score += _gotPoint;
-        _scoreText.text = _score.ToString("D7");
+        _scoreText.text = "スコア:" + _score.ToString("D7");
     }
     
     IEnumerator ChangeScene(){
@@ -77,5 +77,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene(RESULT_SCENE_NAME);
         yield return null;
+    }
+
+    public static int GetScore(){
+        return _score;
     }
 }
