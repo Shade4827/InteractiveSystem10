@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene : MonoBehaviour
 {
     public void OnClickStartButton(){
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Main");
     }
     public void OnClickExplanationButton(){
         SceneManager.LoadScene("Explanation");
