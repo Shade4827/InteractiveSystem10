@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         _flagAddScore = false;
         _destroySE = GetComponent<AudioSource>();
         _countDown = 3.1f;
-        _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
+        _timeText.text = "のこり:" + _timeCount.ToString("f1");
     }
 
     // Update is called once per frame
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             }
             else{
                 _timeCount -= Time.deltaTime;
-                _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
+                _timeText.text = "のこり:" + _timeCount.ToString("f1");
             }
 
             if(_flagAddScore){
