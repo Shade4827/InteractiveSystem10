@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         _flagAddScore = false;
         _destroySE = GetComponent<AudioSource>();
         _countDown = 3.1f;
+        _timeText.text = "残り時間:" + _timeCount.ToString("f1") + "秒";
     }
 
     // Update is called once per frame
