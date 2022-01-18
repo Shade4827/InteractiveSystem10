@@ -6,8 +6,6 @@ public class FingerCollision : MonoBehaviour
 {
     [SerializeField]
     GameObject _gameManager;
-    [SerializeField]
-    GameObject _handModels;
     AudioSource _destroySE;
     
     const int TIRE_POINT = 100;
@@ -16,10 +14,6 @@ public class FingerCollision : MonoBehaviour
     const int BARREL_POINT = 400;
     const int BARREL_CLOSE_POINT = 500;
     const int COLA_CAN_POINT = 1000;
-
-    void Start(){
-        _destroySE = _handModels.GetComponent<AudioSource>();
-    }
 
     void OnCollisionEnter(Collision collision){
         //ゴミに当たったら消す
@@ -49,7 +43,6 @@ public class FingerCollision : MonoBehaviour
             _gameManager.GetComponent<GameManager>().FlagAddScore(gotPoint);
             
             GameObject.Destroy(collision.gameObject);
-            _destroySE.PlayOneShot(_destroySE.clip);
         }
     }
 }

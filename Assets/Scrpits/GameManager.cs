@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     int _gotPoint;
     [SerializeField]
     Text _scoreText;
+    AudioSource _destroySE;
 
     //画面遷移関連
     const string RESULT_SCENE_NAME = "Result";
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
     {
         _score = 0;
         _flagAddScore = false;
+        _destroySE = GetComponent<AudioSource>();
         _countDown = 3.1f;
     }
 
@@ -68,6 +70,7 @@ public class GameManager : MonoBehaviour
     void AddScore(){
         _score += _gotPoint;
         _scoreText.text = "スコア:" + _score.ToString("D7");
+        _destroySE.PlayOneShot(_destroySE.clip);
     }
     
     IEnumerator ChangeScene(){

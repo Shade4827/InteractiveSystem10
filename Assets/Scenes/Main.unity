@@ -141,7 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &106041701 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 130238, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -160,7 +159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!114 &130140061 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11407378, guid: 39d18871c11b53c4082d8202e3db68a3, type: 3}
@@ -195,7 +193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &211611299 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 195126, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -214,7 +211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &284713964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 146090, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -233,7 +229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &297490178
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,7 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &438886959 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 146154, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -477,7 +471,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &445644757
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &585756191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 135338, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -709,7 +701,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &603357895
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 603357897}
   - component: {fileID: 603357896}
+  - component: {fileID: 603357898}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -757,6 +749,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &603357898
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603357895}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9533ab8cb75941e438f0347790a5efa6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &625398783
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,7 +1075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1001 &741670217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1160,7 +1247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &771429235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 128146, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -1179,7 +1265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1001 &831906297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1574,7 +1659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &974633279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 165560, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -1593,7 +1677,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1061318155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1744,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1084997591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1115740178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 159660, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -1809,7 +1890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1214111238
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2914,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1398118411 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 134304, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -2853,7 +2932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1428106205 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 180316, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -2872,7 +2950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1487698882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3001,7 +3078,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1537082139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,7 +3206,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1633288326 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 121614, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -3149,7 +3224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1650749241 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 122640, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -3168,7 +3242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1722708269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 165064, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -3187,7 +3260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1001 &1756017673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3279,7 +3351,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &1825428589
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,7 +3479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1001 &1848197191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4603,7 +4673,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1919539073}
   - component: {fileID: 1919539072}
-  - component: {fileID: 1919539074}
   m_Layer: 0
   m_Name: HandModels
   m_TagString: Player
@@ -4659,102 +4728,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1919539074
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919539071}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9533ab8cb75941e438f0347790a5efa6, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1968056733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4822,7 +4795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &2029807647 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 161754, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -4841,7 +4813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &2031275248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 127730, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -4860,7 +4831,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &2065842934 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 136210, guid: c8515ebee271c0649b9db1321f3026a4, type: 3}
@@ -4879,7 +4849,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &2101006975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 183326, guid: 23f2cce114628a448bfeaae171b4c0c0, type: 3}
@@ -4898,7 +4867,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 603357895}
-  _handModels: {fileID: 1919539071}
 --- !u!1 &2131024537 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 166326, guid: b9c7aaf0d314cb847a3b2a20e893f1b6, type: 3}
